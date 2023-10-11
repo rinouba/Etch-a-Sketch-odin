@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* #FFF3DA
+#DFCCFB
+#D0BFFF
+#BEADFA */
+:root {
+  --background-container: #fff3da;
+  --background-square: #dfccfb;
+  --background-square-hover: #beadfa;
+  --background-body: #d0bfff;
+}
+body {
+  background-color: var(--background-body);
+}
+/*  Main and Buttons */
+.buttons {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  all: unset;
+  background-color: var(--background-container);
+  color: #8e43ff;
+  border: 2px solid var(--background-square);
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: var(--background-body);
+  border: 2px solid var(--background-container);
+  color: white;
+  box-shadow: 0px 0px 30px var(--background-container);
+}
+.btn:active {
+  transform: scaleX(1.8);
+}
+
+.container {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  background-color: var(--background-container);
+}
+
+.square {
+  background-color: var(--background-square);
+  aspect-ratio: 1 / 1;
+}
